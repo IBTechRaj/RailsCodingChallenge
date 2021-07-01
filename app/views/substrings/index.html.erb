@@ -1,0 +1,17 @@
+<h1> result </h1>
+<% name = current_user.present? ? current_user.email : 'Stranger' %>
+
+<h1>Welcome, <%= name %> </h1>
+
+<%= button_to "Add new substring", new_substring_path, method: :get %>
+<div class="card-body">
+      <h4 class="card-title"> Result to shorten </h4>
+      <%= @substring.uniqstr   %>
+      
+      </div>
+<ul>
+  <% @substrings.each do |substring| %>
+    <li><%= link_to substring.result_str, new_substring_path(substring) %></li>
+  <%end%>
+<ul>
+

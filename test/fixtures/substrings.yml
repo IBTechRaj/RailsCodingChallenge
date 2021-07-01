@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  inputstr: MyText
+  uniqstr: MyText
+  uniqsize: 1
+
+two:
+  inputstr: MyText
+  uniqstr: MyText
+  uniqsize: 1

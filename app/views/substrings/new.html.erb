@@ -1,0 +1,11 @@
+
+ <div class="card-body">
+      <h4 class="card-title"> Enter a string to find uniq set of chars </h4>
+      <%= form_for(@substring) do  |f| %>
+       
+          <%= f.text_field :inputstr, class: "form-control",
+          placeholder: "Enter String" %>
+          
+          <%= f.submit "Search", class: 'btn btn-primary mt-2' %>
+      <% end %>
+      </div>
